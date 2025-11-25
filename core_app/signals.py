@@ -28,3 +28,9 @@ def student_pre_save(sender, instance, **kwargs):
 @receiver(post_delete, sender=Students)
 def student_post_delete(sender, instance, **kwargs):
     print("Post Delete Student deleted:", instance.name)
+
+
+    #aggregate, annotate practical
+    #select-related, prefetch_related
+    #Q,F
+    #practicals
